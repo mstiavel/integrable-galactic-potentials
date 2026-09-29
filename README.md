@@ -1,5 +1,7 @@
 # Integrable galactic potentials beyond Stäckel: an analytic search
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23043032.svg)](https://doi.org/10.5281/zenodo.23043032)
+
 **Summary (M. Stiavelli):**
 
 This was an attempt to find non-classical potentials suitable to describe an elliptical galaxy and possessing three integrals of the motion. The tests were developed through interaction with Claude Fable 5.1 that developed the codes and ran the tests. My idea was to do this to be able to exclude quickly cases not leading to integrability. If we had a positive identification of a candidate I planned to take over the analysis. No matter how it is found an integral of the motion can be easily verified. Unfortunately, no non-classical integral was found and I decided to share the null result and how it was obtained to potentially save time to other researchers.
@@ -53,7 +55,9 @@ scripts read; the run order in each README respects those dependencies.
 
 ## Citation
 
-See `CITATION.cff`. Please cite the Zenodo DOI of the release you used.
+Stiavelli, M. (2026), *Integrable galactic potentials beyond Stäckel: an analytic search*, Zenodo,
+[doi:10.5281/zenodo.23043032](https://doi.org/10.5281/zenodo.23043032) (all versions; v0.1.0 is
+[doi:10.5281/zenodo.23043033](https://doi.org/10.5281/zenodo.23043033)). See also `CITATION.cff`.
 
 ## License
 

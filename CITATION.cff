@@ -10,6 +10,14 @@ authors:
 date-released: "2026-09-29"
 version: "0.1.0"
 license: MIT
+doi: "10.5281/zenodo.23043032"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23043032"
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.23043033"
+    description: "Version 0.1.0"
 repository-code: "https://github.com/mstiavel/integrable-galactic-potentials"
 keywords:
   - galactic dynamics
