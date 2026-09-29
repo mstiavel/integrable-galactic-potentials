@@ -39,7 +39,7 @@ with (U, σ) = (A + B, +1) on the axis and (A − B/2, −1) in the plane. Verif
 
 ## 3. Tool 2: the endpoint (scale-free envelope) condition
 
-At a potential-dominated endpoint A ~ a rᵘ, B ~ b rᵘ (r → ∞ for μ > 0), the NVE exponent difference is δ = Δ/2 with
+At a potential-dominated endpoint A ~ a r^μ, B ~ b r^μ (r → ∞ for μ > 0), the NVE exponent difference is δ = Δ/2 with
 
     Δ² = (μ+2)² − 24 b_eff/u_eff,   (u_eff, b_eff) = (a+b, b) on the axis, (a − b/2, −b) in the plane.
 
@@ -151,7 +151,7 @@ Within the class the two rectilinear orbits can see, the polynomial route for a 
 
 *Added after the note above. The effort was redirected to analytic methods; orbit calculations are used only to discard cases.*
 
-**Reduction.** For V = rᵘf(θ) in the meridional plane, a polynomial integral of degree n can be taken quasi-homogeneous; its top part is a rank-n Killing tensor L^d Q_{n−d}(p) (d even by reflection symmetry) and every lower coefficient factorizes as r^{a}×(function of θ). {I,H} = 0 becomes a system of linear ODEs in θ for the lower coefficient functions, with f in the coefficients and sources linear in the Killing parameters. Regular solutions are trigonometric polynomials (integrating factors are pure powers of sin θ, cos θ; regularity kills the logarithms). Eliminating the unknown functions by jet algebra leaves conditions on f alone. Painlevé analysis is vacuous for 0 < μ < 2 (no movable singularities), so the direct method is the tool.
+**Reduction.** For V = r^μf(θ) in the meridional plane, a polynomial integral of degree n can be taken quasi-homogeneous; its top part is a rank-n Killing tensor L^d Q_{n−d}(p) (d even by reflection symmetry) and every lower coefficient factorizes as r^{a}×(function of θ). {I,H} = 0 becomes a system of linear ODEs in θ for the lower coefficient functions, with f in the coefficients and sources linear in the Killing parameters. Regular solutions are trigonometric polynomials (integrating factors are pure powers of sin θ, cos θ; regularity kills the logarithms). Eliminating the unknown functions by jet algebra leaves conditions on f alone. Painlevé analysis is vacuous for 0 < μ < 2 (no movable singularities), so the direct method is the tool.
 
 **Degree 4, μ = 1 (all weights).** Weight 4 (L²(a p_x² + b p_z²)): the elimination is singular only on the sphere (determinant ∝ f′ sin θ) and reduces to the master ODE
 

@@ -12,7 +12,8 @@ An analytic (and, where needed, numerically assisted) investigation of whether a
 axisymmetric galactic potential with a spherical centre — cusped (Hernquist, Jaffe) or cored —
 and an outward-growing flattening can carry a third integral of motion that is not of the
 classical Stäckel type. The work was carried out interactively with Claude (Anthropic) in
-September 2026; the full narrative, results and caveats are in `docs/research_note.md`.
+September 2026; the full narrative, results and caveats are in `docs/research_note.md`
+(also as a PDF: [`docs/research_note.pdf`](docs/research_note.pdf), built with `tools/build_note_pdf.sh`).
 
 The investigation proceeds through six method families, one directory each, in the order in which
 they were developed. Each directory has its own README with the purpose, the scripts, the order in
