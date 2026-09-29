@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Integrable galactic potentials beyond Stäckel: an analytic search"
+authors:
+  - family-names: "Stiavelli"
+    given-names: "Massimo"
+    affiliation: "Space Telescope Science Institute"
+    email: "mstiavel@stsci.edu"
+    orcid: "https://orcid.org/0000-0001-9935-6047"
+date-released: "2026-09-29"
+version: "0.1.0"
+license: MIT
+repository-code: "https://github.com/mstiavel/integrable-galactic-potentials"
+keywords:
+  - galactic dynamics
+  - integrability
+  - Morales-Ramis theory
+  - direct method
+  - Stäckel potentials

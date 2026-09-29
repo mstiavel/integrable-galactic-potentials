@@ -1,0 +1,20 @@
+{
+  "title": "Integrable galactic potentials beyond Stäckel: an analytic search",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Stiavelli, Massimo",
+      "affiliation": "Space Telescope Science Institute",
+      "orcid": "0000-0001-9935-6047"
+    }
+  ],
+  "description": "Analytic investigation (Morales-Ramis theory, direct methods for polynomial integrals, exact scale-free classification, second-order perturbation theory, Birkhoff normal form) of whether smooth axisymmetric galactic potentials with a spherical centre and a flattened envelope can carry a non-Staeckel third integral. Scripts, research note and results.",
+  "license": "MIT",
+  "keywords": [
+    "galactic dynamics",
+    "integrability",
+    "Morales-Ramis",
+    "Staeckel potentials",
+    "direct method"
+  ]
+}
