@@ -1,0 +1,57 @@
+name: smoke test
+
+# Runs a handful of fast scripts from each method directory to check that the code still
+# runs with current releases of sympy/numpy/scipy. It does not reproduce the long runs.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 6 1 * *"   # monthly, to catch breakage from new library releases
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+    env:
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pip freeze | grep -iE "sympy|numpy|scipy|matplotlib"
+
+      - name: 01 Morales-Ramis
+        working-directory: 01_morales_ramis
+        run: |
+          python nve_derive.py
+          python endpoint.py
+          python monodromy.py
+          python mr_core.py
+
+      - name: 02 axis direct method
+        working-directory: 02_axis_direct_method
+        run: |
+          python direct_axis.py
+          python n4_pert.py
+          python n4_elim2.py
+          python multipole_n4.py
+
+      - name: 03 scale-free direct method
+        working-directory: 03_scalefree_direct_method
+        run: |
+          python sf_direct.py
+          python sf_classify.py
+          python scalefree_exact.py
+
+      - name: 05 Birkhoff normal form
+        working-directory: 05_birkhoff_normal_form
+        run: python bnf2.py 8 3 flat

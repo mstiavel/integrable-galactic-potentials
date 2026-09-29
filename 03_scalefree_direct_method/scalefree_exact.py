@@ -1,4 +1,5 @@
-import sympy as sp, itertools, sys
+import sympy as sp, itertools, sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '02_axis_direct_method'))
 from direct_axis import hierarchy
 z, w, t = sp.symbols('z w t')
 Uf = sp.Function('U')(z); Wf = sp.Function('W')(z)
