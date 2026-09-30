@@ -60,8 +60,9 @@ software versions used), so the slow steps need not be rerun.
 ## Citation
 
 Stiavelli, M. (2026), *Integrable galactic potentials beyond Stäckel: an analytic search*, Zenodo,
-[doi:10.5281/zenodo.23043032](https://doi.org/10.5281/zenodo.23043032) (all versions; v0.1.0 is
-[doi:10.5281/zenodo.23043033](https://doi.org/10.5281/zenodo.23043033)). See also `CITATION.cff`.
+[doi:10.5281/zenodo.23043032](https://doi.org/10.5281/zenodo.23043032) (all versions). Individual versions: v0.1.0
+[doi:10.5281/zenodo.23043033](https://doi.org/10.5281/zenodo.23043033), v0.1.1
+[doi:10.5281/zenodo.23049755](https://doi.org/10.5281/zenodo.23049755). See also `CITATION.cff`.
 
 ## License
 

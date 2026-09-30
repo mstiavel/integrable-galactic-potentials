@@ -18,6 +18,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.23043033"
     description: "Version 0.1.0"
+  - type: doi
+    value: "10.5281/zenodo.23049755"
+    description: "Version 0.1.1"
 repository-code: "https://github.com/mstiavel/integrable-galactic-potentials"
 keywords:
   - galactic dynamics
