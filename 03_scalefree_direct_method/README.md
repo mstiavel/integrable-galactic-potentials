@@ -34,5 +34,6 @@ cos and regularity kills the logarithms), so the problem is exact algebra.
   about z, resp. x; t = -2/5 is separable only in each meridional plane and has no 3D third integral.
 
 ## Long runs
-`sf_fast.py 6 2 1` and `sf_fast.py 6 0 1` take 10–60 min; `sf_first.py` gives the decisive first
+`sf_fast.py 6 2 1` takes ~20 min and `sf_fast.py 6 0 1` more than 3 h (measured on an Apple-silicon
+laptop, sympy 1.14); `sf_first.py` gives the decisive first
 condition in seconds and is preferred.

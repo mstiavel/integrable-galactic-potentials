@@ -53,6 +53,9 @@ seconds to minutes; the few long runs are flagged in the section READMEs. No net
 The scripts were written incrementally during the investigation and are kept as they were run
 (with the small fixes noted in each README). Several scripts write intermediate pickles that later
 scripts read; the run order in each README respects those dependencies.
+`tools/generate_intermediates.py` regenerates all of them in order, and each release from v0.1.1 on
+has them attached as `intermediates-<version>.tar.gz` (with checksums and a manifest of the
+software versions used), so the slow steps need not be rerun.
 
 ## Citation
 

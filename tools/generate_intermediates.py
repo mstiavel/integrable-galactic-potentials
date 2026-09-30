@@ -1,11 +1,12 @@
 """Regenerate the intermediate pickles / arrays written by the scripts in 02, 03 and 04.
 
 Usage (from the repository root):
-    python tools/generate_intermediates.py [--timeout SECONDS] [--only 02|03|04|long]
+    python tools/generate_intermediates.py [--timeout SECONDS] [--only 02|03|04]
 
-Each chain runs its steps in order (later steps read earlier outputs); the chains run in
-parallel. Logs go to intermediates/logs/, and intermediates/MANIFEST.txt records the command,
-wall time, exit status, output files with SHA-256, and the Python/library versions.
+Each chain runs its steps in order (later steps read earlier outputs); the chains, one per
+directory, run in parallel. Logs go to intermediates/logs/, and intermediates/MANIFEST.txt
+records the command, wall time, exit status, output files with SHA-256, and the Python/library
+versions.
 """
 import argparse, hashlib, os, platform, subprocess, sys, time
 from concurrent.futures import ThreadPoolExecutor
@@ -22,6 +23,8 @@ CHAINS = {
         'sf_general.py 6 4 1', 'deg6_d4_solve.py',
         'sf_first.py 6 4 1', 'sf_first.py 6 2 1', 'sf_first.py 6 0 1',
         'sf_scan.py 4 1', 'deg6_close.py',
+        # flagged in 03/README as long; 'sf_fast.py 6 0 1' exceeded 3 h in the v0.1.1 run
+        'sf_fast.py 6 2 1', 'sf_fast.py 6 0 1',
     ]],
     '04': [(D4, s) for s in [
         'fo2d.py 0 2', 'fo2d.py 2 2', 'fo2d.py 4 4', 'fo2d.py 6 6', 'fo2d_m6.py',
@@ -29,8 +32,6 @@ CHAINS = {
         'so2d_seq.py 2', 'so2d_seq.py 0', 'so2d_step1.py',
         'so2d_step2.py 2', 'so2d_step2.py 0', 'so2d_step2.py 4',
     ]],
-    # flagged in 03/README as 10-60 min each
-    'long': [(D3, s) for s in ['sf_fast.py 6 2 1', 'sf_fast.py 6 0 1']],
 }
 
 OUT, LOGS = ROOT / 'intermediates', ROOT / 'intermediates' / 'logs'

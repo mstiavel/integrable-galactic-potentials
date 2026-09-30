@@ -8,7 +8,7 @@ authors:
     email: "mstiavel@stsci.edu"
     orcid: "https://orcid.org/0000-0001-9935-6047"
 date-released: "2026-09-29"
-version: "0.1.0"
+version: "0.1.1"
 license: MIT
 doi: "10.5281/zenodo.23043032"
 identifiers:
